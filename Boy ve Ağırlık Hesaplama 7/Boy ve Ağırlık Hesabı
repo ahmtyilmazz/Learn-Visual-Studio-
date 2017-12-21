@@ -1,0 +1,54 @@
+//For Turkish users. //Türk kullanıcılar için.
+
+Public Class Form1
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+
+        Dim boy, kilo, vko As Double
+
+        boy = TextBox1.Text
+        kilo = TextBox2.Text
+        vko = kilo / Math.Pow(boy, 2)
+        Label4.Text = vko 
+
+        If vko < 20 Then
+            Label6.Text = "zayıf"
+        ElseIf vko > 20 And vko < 25 Then
+            Label6.Text = "ideal"
+        ElseIf vko > 25 And vko < 30 Then
+            Label6.Text = "kilolu"
+        ElseIf vko > 30 And vko < 35 Then
+            Label6.Text = "aşırı kilolu"
+        ElseIf vko > 35 Then
+            Label6.Text = "obez"
+        End If
+    End Sub
+End Class
+
+
+
+
+// For Other Nations.  //Diğer milletler için.
+
+Public Class Form1
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+
+        Dim height, weight, hwr As Double    //hwr:height weight rate
+
+        height = TextBox1.Text
+        weight = TextBox2.Text
+        hwr = weight / Math.Pow(boy, 2)
+        Label4.Text = hwr 
+
+        If hwr < 20 Then
+            Label6.Text = "thin"
+        ElseIf hwr > 20 And hwr < 25 Then
+            Label6.Text = "ideal"
+        ElseIf hwr > 25 And hwr < 30 Then
+            Label6.Text = "fat"
+        ElseIf hwr > 30 And hwr < 35 Then
+            Label6.Text = "overweight"
+        ElseIf hwr > 35 Then
+            Label6.Text = "obese"
+        End If
+    End Sub
+End Class
