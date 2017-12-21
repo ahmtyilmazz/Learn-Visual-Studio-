@@ -50,3 +50,7 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+git rm -r dosya_adı
+git commit -m “açıklama”
+git push -u
